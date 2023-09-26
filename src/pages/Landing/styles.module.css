@@ -1,0 +1,77 @@
+.heroWrapper {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 80px 40px 0 40px;
+}
+
+.heroLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.heroCoverImg {
+    min-width: 574px;
+    height: auto;
+    display: flex;
+}
+
+.heroTitle {
+    color: #FFF;
+    font-family: Engine;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.heroTitle span {
+    color: #875BF7;
+}
+
+.heroDescription {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin: 24px 0;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.heroActionBtnsRow {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.heroActionBtnsRow button {
+    padding: 15px 28px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff;
+    min-width: 128px;
+    z-index: 10;
+}
+
+.heroDownloadBtn {
+    background: #875BF7;
+    border: 0;
+}
+
+.heroDocsBtn {
+    background: transparent;
+    border: 1px solid #FFF;
+}
+
+.heroIllustration {
+    position: absolute;
+}

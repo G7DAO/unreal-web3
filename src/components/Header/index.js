@@ -5,7 +5,10 @@ import styles from './styles.module.css';
 const HeaderComponent = () => {
     return (
         <div className={styles.headerContainer}>
-            <p>This is a header component</p>
+            <div className={styles.headerWrapper}>
+                <img src='images/logo.png' alt='Logo Image' />
+                <button className={styles.downloadButton}>Download</button>
+            </div>
         </div>
     )
 }

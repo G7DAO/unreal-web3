@@ -2,3 +2,25 @@
     width: 100%;
     padding: 24px 40px;
 }
+
+.headerWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background: rgba(63, 66, 55, 0.20);
+    backdrop-filter: blur(50px);
+}
+
+.downloadButton {
+    padding: 15px 28px;
+    background: #875BF7;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+}
