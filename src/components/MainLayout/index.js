@@ -7,7 +7,7 @@ import styles from './styles.module.css';
 
 const MainLayout = ({ children }) => {
     return (
-        <div>
+        <div className={styles.mainContainer}>
             <HeaderComponent />
             {children}
             <FooterComponent />
