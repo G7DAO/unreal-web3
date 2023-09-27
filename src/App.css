@@ -8,6 +8,11 @@
   src: url("/public/fonts/Inter-Regular.ttf");
 }
 
+@font-face {
+  font-family: Engine;
+  src: url("/public/fonts/Valonik-Regular.ttf");
+}
+
 body {
   background: #03090E;
 }

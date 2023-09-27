@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     align-items: flex-start;
+    gap: 30px;
     padding: 80px 40px 0 40px;
 }
 
@@ -29,8 +30,15 @@
     margin-top: 20px;
 }
 
-.heroTitle span {
+.heroTitleSpan {
     color: #875BF7;
+    font-family: Engine;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 .heroDescription {
@@ -74,4 +82,202 @@
 
 .heroIllustration {
     position: absolute;
+}
+
+.heroLightStar1 {
+    position: absolute;
+    right: -100px;
+}
+
+.heroRightWrapper {
+    position: relative;
+}
+
+.heroFly {
+    position: absolute;
+    bottom: -142px;
+    left: 110px;
+}
+
+.effortlessIntegrationSection {
+    padding: 192px 40px 104px 0;
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.effortlessCoverWrapper {
+    position: relative;
+    min-width: 535px;
+    min-height: 497px;
+    display: flex;
+    align-items: center;
+}
+
+.effortlessCover {
+    position: absolute;
+    left: 0;
+    top: -680px;
+}
+
+.sectionTitle {
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 54px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.sectionTitle span {
+    color: #875CF7;
+}
+
+.sectionDescription {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    opacity: 0.8;
+    margin: 0;
+    margin-top: 24px;
+}
+
+.openSourceSection {
+    width: 100%;
+    display: flex;
+    padding: 0 0 104px 40px;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.openSourceCoverWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-width: 567px;
+    min-height: 473px;
+}
+
+.openSourceCover {
+    position: absolute;
+    right: 0;
+}
+
+.pluginSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.columnSectionTitle {
+    color: var(--ffffff, #FFF);
+    text-align: center;
+    font-family: Engine;
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 68.8px;
+    letter-spacing: 2.75px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.pluginImgsRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow-x: hidden;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.developmentSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 104px;
+    padding: 0 40px;
+}
+
+.developmentList {
+    width: 100%;
+    margin-top: 48px;
+    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    align-items: center;
+    justify-content: center;
+}
+
+.developmentCard {
+    width: 100%;
+    padding: 40px 32px;
+    background: linear-gradient(0deg, rgba(113, 64, 237, 0.20) -16.95%, rgba(194, 170, 255, 0.00) 100%), #03090E;
+}
+
+.developmentCardTitle {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 31.25px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.developmentCardDesc {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    opacity: 0.8;
+    margin: 0;
+    margin-top: 14px;
+}
+
+.downloadSection {
+    padding: 104px 40px;
+    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    align-items: center;
+    justify-content: center;
+}
+
+.downloadSectionDesc {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    opacity: 0.8;
+    margin: 0;
+}
+
+.downloadActionRow {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    position: relative;
+    margin-top: 14px;
+}
+
+.downloadActionRow button {
+    padding: 15px 28px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff;
+    min-width: 128px;
+    z-index: 10;
 }
