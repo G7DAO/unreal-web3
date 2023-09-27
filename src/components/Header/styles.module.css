@@ -24,3 +24,28 @@
     border: 0;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1080px) {
+    .headerWrapper img {
+        max-width: 204px;
+    }
+}
+
+@media screen and (max-width: 744px) {
+    .headerWrapper img {
+        max-width: 143px;
+    }
+
+    .downloadButton {
+        padding: 12px 24px;
+        font-size: 10px;
+    }
+
+    .headerWrapper {
+        padding: 16px 20px;
+    }
+
+    .headerContainer {
+        padding: 24px 20px;
+    }
+}

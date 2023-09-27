@@ -51,7 +51,7 @@ const LandingPage = () => {
             </section>
 
             <section className={styles.pluginSection}>
-                <h1 className={styles.columnSectionTitle}>view OUR<br />plugin in action</h1>
+                <h1 className={styles.columnSectionTitle}>view OUR <br style={{ display: 'block' }} />plugin in action</h1>
                 <div className={styles.pluginImgsRow}>
                     <img src='images/plugin1.png' alt='Plugin Image' />
                     <img src='images/plugin2.png' alt='Plugin Image' />
@@ -60,7 +60,7 @@ const LandingPage = () => {
             </section>
 
             <section className={styles.developmentSection}>
-                <h1 className={styles.columnSectionTitle}>Web3 game<br />development has<br />never been easier</h1>
+                <h1 className={styles.columnSectionTitle}>Web3 game <br />development has <br />never been easier</h1>
                 <div className={styles.developmentList}>
                     <div className={styles.developmentCard}>
                         <p className={styles.developmentCardTitle}>In-Engine Cryptography Operations</p>
@@ -96,7 +96,7 @@ const LandingPage = () => {
 
             <section className={styles.downloadSection}>
                 <p className={styles.columnSectionTitle}>
-                    DOWNLOAD<br />OUR plugin<br />NOW
+                    DOWNLOAD <br />OUR plugin <br />NOW
                     <div className={styles.effectRow}>
                         <img src='images/effect6.svg' alt='Effect' />
                         <img src='images/effect5.svg' alt='Effect' />

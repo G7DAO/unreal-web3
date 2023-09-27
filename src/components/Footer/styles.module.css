@@ -46,3 +46,27 @@
     margin-top: 6px;
     text-decoration: none;
 }
+
+.footerLogoWrapperMobile {
+    display: none;
+}
+
+@media screen and (max-width: 1080px) {
+    .footerWrapper {
+        padding: 0;
+        background-color: transparent;
+        flex-wrap: wrap;
+    }
+
+    .footerLogoWrapper {
+        display: none;
+    }
+
+    .footerLogoWrapperMobile {
+        display: block;
+    }
+
+    .footerItemsWrapper {
+        min-width: 150px;
+    }
+}

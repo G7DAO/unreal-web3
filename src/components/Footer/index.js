@@ -6,7 +6,7 @@ const FooterComponent = () => {
     return (
         <div className={styles.footerContainer}>
             <div className={styles.footerWrapper}>
-                <div>
+                <div className={styles.footerLogoWrapper}>
                     <img src='images/footer_logo.png' alt='Footer Logo' />
                     <p className={styles.copyRightText}>Copyright © 2023 Game7<br />All rights reserved.</p>
                     <img src='images/game7_logo.png' alt='Game7 Logo' />
@@ -34,6 +34,12 @@ const FooterComponent = () => {
                     <a href='#' className={styles.footerItemText}>Terms</a>
                     <a href='#' className={styles.footerItemText}>Privacy</a>
                     <a href='#' className={styles.footerItemText}>Cookies</a>
+                </div>
+
+                <div className={styles.footerLogoWrapperMobile}>
+                    <img src='images/footer_logo.png' alt='Footer Logo' />
+                    <p className={styles.copyRightText}>Copyright © 2023 Game7<br />All rights reserved.</p>
+                    <img src='images/game7_logo.png' alt='Game7 Logo' />
                 </div>
             </div>
         </div>

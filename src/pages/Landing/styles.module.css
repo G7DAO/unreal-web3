@@ -272,6 +272,7 @@
 
 .developmentCard {
     width: 100%;
+    height: 100%;
     padding: 40px 32px;
     background: linear-gradient(0deg, rgba(113, 64, 237, 0.20) -16.95%, rgba(194, 170, 255, 0.00) 100%), #03090E;
 }
@@ -351,4 +352,151 @@
     position: absolute;
     right: -100px;
     top: -10px;
+}
+
+@media screen and (max-width: 1280px) {
+    .heroTitle, .heroTitleSpan {
+        font-size: 40px;
+    }
+
+    .columnSectionTitle {
+        font-size: 40px;
+        line-height: 60px
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .heroWrapper {
+        flex-direction: column;
+        padding-top: 60px;
+        align-items: center;
+    }
+
+    .heroLeft {
+        margin-right: auto;
+    }
+
+    .heroRightWrapper {
+        margin-top: 90px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .heroFly {
+        left: auto;
+    }
+
+    .effortlessIntegrationSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .effortlessDescWrapper {
+        padding: 0 40px;
+    }
+
+    .openSourceSection {
+        flex-direction: column-reverse;
+        padding: 0 40px 75px 40px;
+    }
+
+    .developmentList {
+        display: block;
+    }
+
+    .downloadSection {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .columnSectionTitle br {
+        display: none;
+    }
+
+    .downloadSection .columnSectionTitle {
+        text-align: left;
+    }
+
+    .pluginImgsRow img {
+        height: 277px;
+        width: auto;
+    }
+
+    .openSourceSection .sectionTitle .lightEffect, .effect3, .effectRow {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 744px) {
+    .heroTitle, .heroTitleSpan {
+        font-size: 24px;
+    }
+
+    .heroWrapper {
+        padding-top: 40px;
+    }
+
+    .heroDescription {
+        font-size: 16px;
+    }
+
+    .heroCoverImg {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .heroFly {
+        width: 41px;
+        bottom: -105px;
+    }
+
+    .heroRightWrapper {
+        margin-top: 50px;
+    }
+
+    .sectionTitle {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .sectionDescription {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .pluginSection .columnSectionTitle {
+        padding: 0 40px;
+    }
+
+    .pluginImgsRow {
+        gap: 10px;
+    }
+
+    .pluginImgsRow img {
+        height: 139px;
+    }
+
+    .pluginSection .columnSectionTitle, .developmentSection .columnSectionTitle {
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 1.2px;
+    }
+
+    .developmentSection {
+        margin-top: 80px;
+    }
+
+    .developmentList {
+        margin-top: 40px;
+    }
+
+    .developmentCardTitle {
+        font-size: 20px;
+    }
+
+    .developmentCardDesc {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
