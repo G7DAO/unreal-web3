@@ -114,6 +114,22 @@
     align-items: center;
 }
 
+.lightEffect {
+    position: absolute;
+    top: 70px;
+    left: 100px;
+}
+
+.effortlessDescWrapper {
+    position: relative;
+}
+
+.effortlessDescWrapper .lightEffect  {
+    bottom: -70px;
+    left: 200px;
+    top: auto;
+}
+
 .effortlessCover {
     position: absolute;
     left: 0;
@@ -128,6 +144,28 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     margin: 0;
+    position: relative;
+}
+
+.openSourceSection .sectionTitle .lightEffect {
+    right: -10px;
+    top: -30px;
+    left: auto;
+}
+
+.openSourceSection .sectionTitle .effect3 {
+    position: absolute;
+    right: -40px;
+    bottom: -50px;
+}
+
+.openSourceSection .sectionTitle .effectRow {
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    gap: 20px;
 }
 
 .sectionTitle span {
@@ -175,7 +213,7 @@
 }
 
 .columnSectionTitle {
-    color: var(--ffffff, #FFF);
+    color: #FFF;
     text-align: center;
     font-family: Engine;
     font-size: 55px;
@@ -184,6 +222,24 @@
     letter-spacing: 2.75px;
     text-transform: uppercase;
     margin: 0;
+    text-align: center;
+    position: relative;
+    width: fit-content;
+}
+
+.columnSectionTitle .effectRow {
+    position: absolute;
+    bottom: 20px;
+    left: 220px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.columnSectionTitle .effect7 {
+    position: absolute;
+    right: -30px;
+    top: 20px;
 }
 
 .pluginImgsRow {
@@ -251,6 +307,10 @@
     justify-content: center;
 }
 
+.downloadSection .columnSectionTitle {
+    text-align: left;
+}
+
 .downloadSectionDesc {
     color: #FFF;
     font-family: Inter;
@@ -268,6 +328,7 @@
     align-items: center;
     position: relative;
     margin-top: 14px;
+    width: fit-content;
 }
 
 .downloadActionRow button {
@@ -280,4 +341,14 @@
     color: #fff;
     min-width: 128px;
     z-index: 10;
+}
+
+.downloadActionRow {
+    position: relative;
+}
+
+.downloadActionRow .effect8 {
+    position: absolute;
+    right: -100px;
+    top: -10px;
 }

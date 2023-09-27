@@ -25,16 +25,26 @@ const LandingPage = () => {
 
             <section className={styles.effortlessIntegrationSection}>
                 <div className={styles.effortlessCoverWrapper}>
+                    <img src='images/light_star_big.svg' className={styles.lightEffect} alt='Light Illustration' />
                     <img src='images/effortless_cover.png' alt='Cover' className={styles.effortlessCover} />
                 </div>
-                <div>
+                <div className={styles.effortlessDescWrapper}>
+                    <img src='images/light_star_big.svg' className={styles.lightEffect} alt='Light Illustration' />
                     <p className={styles.sectionTitle}>Effortless Integration with <span>HyperPlay</span> for MetaMask and WalletConnect Support</p>
                     <p className={styles.sectionDescription}>Our plugin enables players to connect their existing MetaMask or WalletConnect compatible wallet with Unreal Engine games, providing true interoperability across the web3 ecosystem.</p>
                 </div>
             </section>
 
             <section className={styles.openSourceSection}>
-                <p className={styles.sectionTitle}><span>Free and Open Source</span> Unreal Engine Plugin with MIT License</p>
+                <p className={styles.sectionTitle}>
+                    <span>Free and Open Source</span> Unreal Engine Plugin with MIT License
+                    <img src='images/light_star_big.svg' className={styles.lightEffect} alt='Light Illustration' />
+                    <img src='images/effect3.svg' alt='Effect' className={styles.effect3} />
+                    <div className={styles.effectRow}>
+                        <img src='images/effect4.svg' alt='Effect' />
+                        <img src='images/effect5.svg' alt='Effect' />
+                    </div>
+                </p>
                 <div className={styles.openSourceCoverWrapper}>
                     <img src='images/open_source_cover.png' alt='Cover' className={styles.openSourceCover} />
                 </div>
@@ -85,12 +95,20 @@ const LandingPage = () => {
             </section>
 
             <section className={styles.downloadSection}>
-                <p className={styles.columnSectionTitle}>DOWNLOAD OUR plugin NOW</p>
+                <p className={styles.columnSectionTitle}>
+                    DOWNLOAD<br />OUR plugin<br />NOW
+                    <div className={styles.effectRow}>
+                        <img src='images/effect6.svg' alt='Effect' />
+                        <img src='images/effect5.svg' alt='Effect' />
+                    </div>
+                    <img src='images/effect7.svg' alt='Effect' className={styles.effect7} />
+                </p>
                 <div>
                     <p className={styles.downloadSectionDesc}>Learn more about Web3 integration into Unreal Engine by exploring our detailed GitHub documentation. Investigate engine compatibility, see screenshots, and dive into thorough explanations to maximize Web3's gaming potential. Enhance your development with Web3.Unreal by delving into our documentation.</p>
                     <div className={styles.downloadActionRow}>
                         <button className={styles.heroDownloadBtn}>Download</button>
                         <button className={styles.heroDocsBtn}>Docs</button>
+                    <img src='images/effect8.svg' alt='Effect' className={styles.effect8} />
                     </div>
                 </div>
             </section>
