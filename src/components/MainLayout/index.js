@@ -1,6 +1,7 @@
 import React from 'react';
 
 import HeaderComponent from '../Header';
+import FooterComponent from '../Footer';
 
 import styles from './styles.module.css';
 
@@ -9,6 +10,7 @@ const MainLayout = ({ children }) => {
         <div>
             <HeaderComponent />
             {children}
+            <FooterComponent />
         </div>
     )
 }
