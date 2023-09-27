@@ -188,7 +188,7 @@
     display: flex;
     padding: 0 0 104px 40px;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
     justify-content: space-between;
 }
 
@@ -354,6 +354,13 @@
     top: -10px;
 }
 
+.effortlessCoverMobile, 
+.openSourceCoverMobile, 
+.openSourceEffectMobileLeft, 
+.openSourceEffectMobileRight {
+    display: none;
+}
+
 @media screen and (max-width: 1280px) {
     .heroTitle, .heroTitleSpan {
         font-size: 40px;
@@ -389,10 +396,35 @@
     .effortlessIntegrationSection {
         flex-direction: column;
         align-items: center;
+        padding-right: 0;
     }
 
     .effortlessDescWrapper {
         padding: 0 40px;
+    }
+
+    .effortlessCoverWrapper {
+        width: 100%;
+    }
+
+    .effortlessCoverWrapper .lightEffect {
+        display: none;
+    }
+
+    .effortlessCover {
+        display: none;
+    }
+
+    .effortlessCoverMobile {
+        display: block;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: auto;
+    }
+
+    .effortlessDescWrapper .lightEffect {
+        display: none;
     }
 
     .openSourceSection {
@@ -425,6 +457,44 @@
 
     .openSourceSection .sectionTitle .lightEffect, .effect3, .effectRow {
         display: none !important;
+    }
+
+    .openSourceCover {
+        display: none;
+    }
+
+    .openSourceCoverMobile {
+        display: block;
+    }
+
+    .openSourceEffectMobileLeft {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .openSourceEffectMobileRight {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .openSourceCoverWrapper {
+        min-width: auto;
+        min-height: auto;
+        position: relative;
+    }
+
+    .downloadActionRow .effect8 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .effortlessIntegrationSection {
+        gap: 0;
     }
 }
 
@@ -498,5 +568,54 @@
     .developmentCardDesc {
         font-size: 16px;
         line-height: 24px;
+    }
+
+    .columnSectionTitle .effect7 {
+        right: 120px;
+        top: auto;
+        margin-top: 20px;
+        z-index: -1;
+    }
+
+    .downloadSection {
+        padding: 80px 40px;
+    }
+
+    .downloadSection .columnSectionTitle {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .effortlessCoverMobile {
+        top: -565px;
+    }
+
+    .effortlessCoverWrapper {
+        min-height: 360px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .effortlessCoverMobile {
+        top: -460px;
+    }
+
+    .effortlessCoverWrapper {
+        min-height: 300px;
+        min-width: 430px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .effortlessCoverWrapper {
+        min-height: 230px;
+    }
+
+    .heroLightStar1 {
+        right: -50px;
+        top: -20px;
+        width: 28px;
     }
 }

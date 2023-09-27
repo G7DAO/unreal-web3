@@ -56,6 +56,7 @@
         padding: 0;
         background-color: transparent;
         flex-wrap: wrap;
+        gap: 40px;
     }
 
     .footerLogoWrapper {
@@ -67,6 +68,6 @@
     }
 
     .footerItemsWrapper {
-        min-width: 150px;
+        min-width: 130px;
     }
 }

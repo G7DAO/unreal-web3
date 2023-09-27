@@ -27,6 +27,7 @@ const LandingPage = () => {
                 <div className={styles.effortlessCoverWrapper}>
                     <img src='images/light_star_big.svg' className={styles.lightEffect} alt='Light Illustration' />
                     <img src='images/effortless_cover.png' alt='Cover' className={styles.effortlessCover} />
+                    <img src='images/effortless_cover_mobile.png' alt='Cover' className={styles.effortlessCoverMobile} />
                 </div>
                 <div className={styles.effortlessDescWrapper}>
                     <img src='images/light_star_big.svg' className={styles.lightEffect} alt='Light Illustration' />
@@ -47,6 +48,9 @@ const LandingPage = () => {
                 </p>
                 <div className={styles.openSourceCoverWrapper}>
                     <img src='images/open_source_cover.png' alt='Cover' className={styles.openSourceCover} />
+                    <img src='images/open_source_cover_mobile.png' alt='Cover' className={styles.openSourceCoverMobile} />
+                        <img src='images/effect7.svg' alt='Effect' className={styles.openSourceEffectMobileLeft} />
+                        <img src='images/effect7.svg' alt='Effect' className={styles.openSourceEffectMobileRight} />
                 </div>
             </section>
 
