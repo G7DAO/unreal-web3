@@ -7,7 +7,7 @@ const FooterComponent = () => {
         <div className={styles.footerContainer}>
             <div className={styles.footerWrapper}>
                 <div className={styles.footerLogoWrapper}>
-                    <img src='images/footer_logo.png' alt='Footer Logo' />
+                    <img src='images/footer_logo.svg' alt='Footer Logo' />
                     <p className={styles.copyRightText}>Copyright © 2023 Game7<br />All rights reserved.</p>
                     <img src='images/game7_logo.png' alt='Game7 Logo' />
                 </div>
