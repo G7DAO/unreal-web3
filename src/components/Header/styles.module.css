@@ -1,6 +1,9 @@
 .headerContainer {
     width: 100%;
     padding: 24px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
 }
 
 .headerWrapper {
