@@ -1,6 +1,7 @@
 import React from 'react';
 
 import styles from './styles.module.css';
+import HeroButtons from '../../components/HeroButtons';
 
 const LandingPage = () => {
     return (
@@ -10,12 +11,7 @@ const LandingPage = () => {
                     <h1 className={styles.heroTitle}>BRIDGING THE GAP BETWEEN</h1>
                     <h1 className={styles.heroTitleSpan}>WEB3 AND UNREAL ENGINE</h1>
                     <p className={styles.heroDescription}>Connect with any EVM-compatible blockchain in minutes.</p>
-                    <div className={styles.heroActionBtnsRow}>
-                        <div className={styles.ovalPurpleHorizontalBlur}></div>
-                        <button className={styles.heroDownloadBtn}>Download</button>
-                        <button className={styles.heroDocsBtn}>Docs</button>
-                        <img src='images/light_star_big.svg' className={styles.heroLightStar1} alt='Light Illustration' />
-                    </div>
+                    <HeroButtons showHighlight={true}/>
                 </div>
                 <div className={styles.heroRightWrapper}>
                     <img src='images/hero_cover.svg' className={styles.heroCoverImg} alt='Hero Cover Image' />
