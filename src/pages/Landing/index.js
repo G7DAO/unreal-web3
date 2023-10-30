@@ -4,16 +4,16 @@ import styles from './styles.module.css';
 
 const LandingPage = () => {
     return (
-        <div>
+        <div className={styles.landingPage}>
             <section className={styles.heroWrapper}>
                 <div className={styles.heroLeft}>
                     <h1 className={styles.heroTitle}>BRIDGING THE GAP BETWEEN</h1>
                     <h1 className={styles.heroTitleSpan}>WEB3 AND UNREAL ENGINE</h1>
                     <p className={styles.heroDescription}>Connect with any EVM-compatible blockchain in minutes.</p>
                     <div className={styles.heroActionBtnsRow}>
+                        <div className={styles.ovalPurpleHorizontalBlur}></div>
                         <button className={styles.heroDownloadBtn}>Download</button>
                         <button className={styles.heroDocsBtn}>Docs</button>
-                        <img src='images/hero_illustration.svg' className={styles.heroIllustration} alt='Hero Illustration' />
                         <img src='images/light_star_big.svg' className={styles.heroLightStar1} alt='Light Illustration' />
                     </div>
                 </div>
@@ -25,9 +25,9 @@ const LandingPage = () => {
 
             <section className={styles.effortlessIntegrationSection}>
                 <div className={styles.effortlessCoverWrapper}>
+                    <div className={styles.circularPurpleBlur} ></div>
                     <img src='images/light_star_big.svg' className={styles.lightEffect} alt='Light Illustration' />
-                    <img src='images/effortless_cover.svg' alt='Cover' className={styles.effortlessCover} />
-                    <img src='images/effortless_cover_mobile.svg' alt='Cover' className={styles.effortlessCoverMobile} />
+                    <img src='images/HP_MM_WC.svg' alt='Cover' className={styles.hyperPlayMetaMaskWalletConnectImage}/>
                 </div>
                 <div className={styles.effortlessDescWrapper}>
                     <img src='images/light_star_big.svg' className={styles.lightEffect} alt='Light Illustration' />
@@ -47,10 +47,10 @@ const LandingPage = () => {
                     </div>
                 </p>
                 <div className={styles.openSourceCoverWrapper}>
-                    <img src='images/open_source_cover.svg' alt='Cover' className={styles.openSourceCover} />
-                    <img src='images/open_source_cover_mobile.svg' alt='Cover' className={styles.openSourceCoverMobile} />
-                        <img src='images/effect7.svg' alt='Effect' className={styles.openSourceEffectMobileLeft} />
-                        <img src='images/effect7.svg' alt='Effect' className={styles.openSourceEffectMobileRight} />
+                    <div className={styles.circularPurpleBlur} ></div>
+                    <img src='images/w3_logo.svg' alt='Cover' className={styles.openSourceCover} />
+                    <img src='images/effect7.svg' alt='Effect' className={styles.openSourceEffectMobileLeft} />
+                    <img src='images/effect7.svg' alt='Effect' className={styles.openSourceEffectMobileRight} />
                 </div>
             </section>
 
