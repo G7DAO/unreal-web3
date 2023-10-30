@@ -580,3 +580,8 @@
     max-width: 1200px;
     margin: 0px auto;
 }
+
+.downloadPluginCTAContainer {
+    margin-right: 40px;
+    display: inline-block;
+}

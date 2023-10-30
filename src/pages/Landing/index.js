@@ -14,7 +14,7 @@ const LandingPage = () => {
                     <HeroButtons showHighlight={true}/>
                 </div>
                 <div className={styles.heroRightWrapper}>
-                    <img src='images/hero_cover.svg' className={styles.heroCoverImg} alt='Hero Cover Image' />
+                    <img src='images/hero_cover.svg' className={styles.heroCoverImg} alt='Hero Cover' />
                     <img src='images/hero_fly.svg' alt='Hero Fly' className={styles.heroFly} />
                 </div>
             </section>
@@ -105,11 +105,10 @@ const LandingPage = () => {
                 </p>
                 <div>
                     <p className={styles.downloadSectionDesc}>Learn more about Web3 integration into Unreal Engine by exploring our detailed GitHub documentation. Investigate engine compatibility, see screenshots, and dive into thorough explanations to maximize Web3's gaming potential. Enhance your development with Web3.Unreal by delving into our documentation.</p>
-                    <div className={styles.downloadActionRow}>
-                        <button className={styles.heroDownloadBtn}>Download</button>
-                        <button className={styles.heroDocsBtn}>Docs</button>
-                    <img src='images/effect8.svg' alt='Effect' className={styles.effect8} />
+                    <div className={styles.downloadPluginCTAContainer}>
+                        <HeroButtons showHighlight={false} />
                     </div>
+                    <img src='images/effect8.svg' alt='Effect' className={styles.effect8} />
                 </div>
             </section>
         </div>
