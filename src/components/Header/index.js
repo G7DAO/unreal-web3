@@ -7,7 +7,7 @@ const HeaderComponent = () => {
     return (
         <div className={styles.headerContainer}>
             <div className={styles.headerWrapper}>
-                <img src='images/logo.svg' alt='Logo Image' />
+                <img src='images/logo.svg' alt='Logo' />
                 <HeroButtons showHighlight={false} />
             </div>
         </div>

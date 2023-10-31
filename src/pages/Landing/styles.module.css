@@ -585,3 +585,45 @@
     margin-right: 40px;
     display: inline-block;
 }
+
+.carouselContainer {
+    display: flex;
+    position: relative;
+    margin: 20px 0px;
+}
+
+.carouselSlide {
+    position: relative;
+    > h1 {
+        position: absolute;
+        bottom: 60px;
+        left: 40px;
+        color: white;
+        font-family: Engine;
+        font-size: 40px;
+    }
+}
+
+.carouselIndicators {
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    > button[data-active="true"]{
+        background-color: #875BF7;
+    }
+    > button {
+        border: 1px solid transparent;
+        border-radius: 2px; 
+        height: 4px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.carouselViewport {
+    width: 1200px;
+    overflow: hidden;
+}

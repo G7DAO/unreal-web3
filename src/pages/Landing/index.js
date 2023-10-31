@@ -2,6 +2,7 @@ import React from 'react';
 
 import styles from './styles.module.css';
 import HeroButtons from '../../components/HeroButtons';
+import { Carousel } from '@mantine/carousel';
 
 const LandingPage = () => {
     return (
@@ -52,11 +53,30 @@ const LandingPage = () => {
 
             <section className={styles.pluginSection}>
                 <h1 className={styles.columnSectionTitle}>view OUR <br style={{ display: 'block' }} />plugin in action</h1>
-                <div className={styles.pluginImgsRow}>
-                    <img src='images/plugin1.png' alt='Plugin Image' />
-                    <img src='images/plugin2.png' alt='Plugin Image' />
-                    <img src='images/plugin3.png' alt='Plugin Image' />
-                </div>
+                <Carousel classNames={{slide: styles.carouselSlide, container: styles.carouselContainer, indicators: styles.carouselIndicators, viewport: styles.carouselViewport}}
+                    loop={true}
+                    withControls={false}
+                    withIndicators={true}
+                    slideSize="1200px">
+                    <Carousel.Slide>
+                        <video width={1200} controls>
+                            <source src='images/videos/AnotherWorld.mp4' type='video/mp4'/>
+                        </video>
+                        <h1>Another World</h1>
+                    </Carousel.Slide>
+                    <Carousel.Slide>
+                        <video width={1200} controls>
+                            <source src='images/videos/Kosium.mp4' type='video/mp4'/>
+                        </video>
+                        <h1>Kosium: Arctic Eclipse</h1>
+                    </Carousel.Slide>
+                    <Carousel.Slide>
+                        <video width={1200} controls>
+                            <source src='images/videos/MoonBlasters.mp4' type='video/mp4'/>
+                        </video>
+                        <h1>MoonBlasters</h1>
+                    </Carousel.Slide>
+                </Carousel>
             </section>
 
             <section className={styles.developmentSection}>
