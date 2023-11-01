@@ -1,7 +1,7 @@
 .headerContainer {
     width: 100%;
     padding: 24px 40px;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 99;
 }
