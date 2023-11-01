@@ -594,6 +594,11 @@
 
 .carouselSlide {
     position: relative;
+    padding: 0px 10px;
+    > div {
+        width: 640px;
+        height: 360px;
+    }
 }
 
 .carouselIndicators {
@@ -618,4 +623,33 @@
 .carouselViewport {
     width: 1200px;
     overflow: hidden;
+}
+
+
+@media screen and (max-width: 700px) {
+    .carouselIndicators {
+        display: none;
+    }
+
+    .carouselContainer {
+        flex-direction: column;
+        max-width: 100vw;
+        gap: 20px;
+    }
+
+    .carouselSlide {
+        padding: 0px;
+        margin: 0px auto;
+        max-width: 100vw;
+        width: 90vw;
+        height: calc(90vw / 16 * 9);
+        > div {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    .carouselViewport {
+        max-width: 100vw;
+    }
 }

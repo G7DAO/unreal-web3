@@ -58,15 +58,22 @@ const LandingPage = () => {
                     loop={true}
                     withControls={false}
                     withIndicators={true}
-                    slideSize="1200px">
+                    slideSize="1200px"
+                    draggable={false}>
                     <Carousel.Slide>
-                        <ReactPlayer url='https://youtu.be/_kVAiWbnngc' controls={true}/>
+                        <div>
+                            <ReactPlayer url='https://youtu.be/_kVAiWbnngc' controls={true} width={'100%'} height={'100%'}/>
+                        </div>
                     </Carousel.Slide>
                     <Carousel.Slide>
-                        <ReactPlayer url='https://youtu.be/czoYWrj2UNs' controls={true}/>
+                        <div>
+                            <ReactPlayer url='https://youtu.be/czoYWrj2UNs' controls={true} width={'100%'} height={'100%'}/>
+                        </div>
                     </Carousel.Slide>
                     <Carousel.Slide>
-                        <ReactPlayer url='https://youtu.be/dVBnhJBw5oY' controls={true}/>
+                        <div>
+                            <ReactPlayer url='https://youtu.be/dVBnhJBw5oY' controls={true} width={'100%'} height={'100%'}/>
+                        </div>
                     </Carousel.Slide>
                 </Carousel>
             </section>
