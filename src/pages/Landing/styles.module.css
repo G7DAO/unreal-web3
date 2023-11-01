@@ -594,14 +594,6 @@
 
 .carouselSlide {
     position: relative;
-    > h1 {
-        position: absolute;
-        bottom: 60px;
-        left: 40px;
-        color: white;
-        font-family: Engine;
-        font-size: 40px;
-    }
 }
 
 .carouselIndicators {

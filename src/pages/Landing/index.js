@@ -3,6 +3,7 @@ import React from 'react';
 import styles from './styles.module.css';
 import HeroButtons from '../../components/HeroButtons';
 import { Carousel } from '@mantine/carousel';
+import ReactPlayer from 'react-player';
 
 const LandingPage = () => {
     return (
@@ -59,22 +60,13 @@ const LandingPage = () => {
                     withIndicators={true}
                     slideSize="1200px">
                     <Carousel.Slide>
-                        <video width={1200} controls>
-                            <source src='images/videos/AnotherWorld.mp4' type='video/mp4'/>
-                        </video>
-                        <h1>Another World</h1>
+                        <ReactPlayer url='https://youtu.be/_kVAiWbnngc' controls={true}/>
                     </Carousel.Slide>
                     <Carousel.Slide>
-                        <video width={1200} controls>
-                            <source src='images/videos/Kosium.mp4' type='video/mp4'/>
-                        </video>
-                        <h1>Kosium: Arctic Eclipse</h1>
+                        <ReactPlayer url='https://youtu.be/czoYWrj2UNs' controls={true}/>
                     </Carousel.Slide>
                     <Carousel.Slide>
-                        <video width={1200} controls>
-                            <source src='images/videos/MoonBlasters.mp4' type='video/mp4'/>
-                        </video>
-                        <h1>MoonBlasters</h1>
+                        <ReactPlayer url='https://youtu.be/dVBnhJBw5oY' controls={true}/>
                     </Carousel.Slide>
                 </Carousel>
             </section>
