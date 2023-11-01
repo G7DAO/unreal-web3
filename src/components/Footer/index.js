@@ -32,9 +32,7 @@ const FooterComponent = () => {
                     <a href='https://www.linkedin.com/company/g7dao/' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
                 </div>
             </div>
-            <div className={styles.footerLogo}>
-                <img src='images/w3_logo.svg' alt='Web3.Unreal Logo' /> 
-            </div>
+            <img src='images/w3_logo.svg' alt='Web3.Unreal Logo' className={styles.footerLogo}/> 
         </div>
     )
 }
