@@ -52,11 +52,6 @@
     margin: 0;
 }
 
-
-.footerLogoWrapperMobile {
-    display: none;
-}
-
 .footerLogoWrapper {
     display: flex;
     height: 38px;
@@ -102,11 +97,23 @@
         gap: 40px;
     }
 
-    .footerLogoWrapperMobile {
-        display: block;
-    }
-
     .footerItemsWrapper {
         min-width: 130px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footerLogoWrapper {
+        height: 26px;
+    }
+
+    .footerSection {
+        padding: 40px 80px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .footerSection {
+        padding: 40px 60px;
     }
 }
