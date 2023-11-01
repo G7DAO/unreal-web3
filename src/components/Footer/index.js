@@ -1,46 +1,39 @@
 import React from 'react';
 
 import styles from './styles.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDiscord, faXTwitter, faGithub, faYoutube, faMedium, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const FooterComponent = () => {
     return (
-        <div className={styles.footerContainer}>
-            <div className={styles.footerWrapper}>
+        <div className={styles.footerSection}>
+            <div className={styles.footerContainer}>
                 <div className={styles.footerLogoWrapper}>
-                    <img src='images/footer_logo.svg' alt='Footer Logo' />
-                    <p className={styles.copyRightText}>Copyright © 2023 Game7<br />All rights reserved.</p>
-                    <img src='images/game7_logo.png' alt='Game7 Logo' />
+                    <img src='images/logo.svg' alt='Web3.Unreal Logo' /> 
+                    <img src='images/g7_logo.svg' alt='Game7 Logo' /> 
                 </div>
+
+                <hr/>
 
                 <div className={styles.footerItemsWrapper}>
-                    <p className={styles.footerItemTitle}>Resources</p>
-
-                    <a href='#' className={styles.footerItemText}>Download</a>
-                    <a href='#' className={styles.footerItemText}>Docs</a>
-                    <a href='#' className={styles.footerItemText}>Github</a>
+                    <a href='https://unrealengine.com/marketplace/en-US/store' target="_blank" rel="noopener noreferrer">Download</a>
+                    <a href='https://web3unreal.readthedocs.io/en/latest/' target="_blank" rel="noopener noreferrer">Docs</a>
+                    <a href='https://github.com/G7DAO/web3.unreal' target="_blank" rel="noopener noreferrer">Github</a>
                 </div>
+
+                <hr/>
 
                 <div className={styles.footerItemsWrapper}>
-                    <p className={styles.footerItemTitle}>Connect</p>
-
-                    <a href='#' className={styles.footerItemText}>G7 Discord</a>
-                    <a href='#' className={styles.footerItemText}>Summon Discord</a>
-                    <a href='#' className={styles.footerItemText}>Youtube</a>
+                    <a href='https://discord.com/invite/g7dao' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faDiscord} /></a>
+                    <a href='https://twitter.com/G7_DAO' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faXTwitter} /></a>
+                    <a href='https://github.com/G7DAO/web3.unreal' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+                    <a href='https://www.youtube.com/channel/UCErT-tpN4SE0ihTzU_fY-BQ' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} /></a>
+                    <a href='https://medium.com/@G7_DAO' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faMedium} /></a>
+                    <a href='https://www.linkedin.com/company/g7dao/' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
                 </div>
-
-                <div className={styles.footerItemsWrapper}>
-                    <p className={styles.footerItemTitle}>Legal</p>
-
-                    <a href='#' className={styles.footerItemText}>Terms</a>
-                    <a href='#' className={styles.footerItemText}>Privacy</a>
-                    <a href='#' className={styles.footerItemText}>Cookies</a>
-                </div>
-
-                <div className={styles.footerLogoWrapperMobile}>
-                    <img src='images/footer_logo.png' alt='Footer Logo' />
-                    <p className={styles.copyRightText}>Copyright © 2023 Game7<br />All rights reserved.</p>
-                    <img src='images/game7_logo.png' alt='Game7 Logo' />
-                </div>
+            </div>
+            <div className={styles.footerLogo}>
+                <img src='images/w3_logo.svg' alt='Web3.Unreal Logo' /> 
             </div>
         </div>
     )

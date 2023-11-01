@@ -1,32 +1,44 @@
-.footerContainer {
+.footerSection {
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    background: #000;
+    border-radius: 59.875px 59.875px 0px 0px;
+    border: 1px solid rgba(64, 70, 79, 0.68);
+    background: #171717;
+    padding: 60px 120px;
+    overflow: hidden;
 }
 
-.footerWrapper {
-    width: 100%;
+.footerContainer {
     display: flex;
+    align-content: center;
+    justify-content: center;
     gap: 20px;
     justify-content: space-between;
-    padding: 40px;
-    max-width: 1200px;
-    margin: 0px auto;
-}
+    flex-direction: column;
 
-.copyRightText {
-    color: #CDD5DF;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    margin: 12px 0;
-    margin-right: 200px;
+    > hr {
+        width: 100%;
+        color: #475467;
+    }
+    z-index: 1;
 }
 
 .footerItemsWrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex: 1;
+    gap: 40px;
+
+    > * {
+        color: #CDD5DF;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        margin: 0;
+        margin-top: 6px;
+        text-decoration: none;
+    }
 }
 
 .footerItemTitle {
@@ -37,18 +49,48 @@
     margin: 0;
 }
 
-.footerItemText {
-    color: #CDD5DF;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 21px;
-    margin: 0;
-    margin-top: 6px;
-    text-decoration: none;
-}
 
 .footerLogoWrapperMobile {
     display: none;
+}
+
+.footerLogoWrapper {
+    display: flex;
+    height: 38px;
+    align-items: center;
+    gap: 20px;
+    > img {
+        height: 100%;
+    }
+    > img:first-child {
+        border-right: 1px solid white;
+        padding-right: 20px;
+    }
+
+    > img:last-child {
+        height: 16px;
+    }
+}
+
+.footerLogo {
+    width: 100%;
+    position: relative;
+    > img {
+        position: absolute;
+        top: -80px;
+        right: 100px;
+        transform: scale(2);
+        z-index: 0;
+    }
+}
+
+
+@media screen and (max-width: 1275px) {
+    .footerLogo {
+        > img {
+            opacity: 40%;
+        }
+    }
 }
 
 @media screen and (max-width: 1080px) {
@@ -57,10 +99,6 @@
         background-color: transparent;
         flex-wrap: wrap;
         gap: 40px;
-    }
-
-    .footerLogoWrapper {
-        display: none;
     }
 
     .footerLogoWrapperMobile {
