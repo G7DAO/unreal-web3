@@ -561,6 +561,13 @@
     .effortlessCoverWrapper {
         min-height: 360px;
     }
+
+    .heroLeft {
+        > h1 {
+            line-height: 46px;
+            font-size: 34px;
+        }
+    }
 }
 
 @media screen and (max-width: 530px) {
