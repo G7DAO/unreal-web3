@@ -16,7 +16,7 @@ const FooterComponent = () => {
                 <hr/>
 
                 <div className={styles.footerItemsWrapper}>
-                    <a href='https://unrealengine.com/marketplace/en-US/store' target="_blank" rel="noopener noreferrer">Download</a>
+                    <a href='https://www.unrealengine.com/marketplace/en-US/product/e531ab2a55f64e9c93db49d242908626' target="_blank" rel="noopener noreferrer">Download</a>
                     <a href='https://web3unreal.readthedocs.io/en/latest/' target="_blank" rel="noopener noreferrer">Docs</a>
                     <a href='https://github.com/G7DAO/web3.unreal' target="_blank" rel="noopener noreferrer">Github</a>
                 </div>
